@@ -127,7 +127,7 @@ def main():
     endings = ['st', 'nd', 'rd'] + 17 * ['th'] #There are 20 links the whole page
     if len(list(GetLobbyUrl())) == 0:
         print('\nNo lobby needs your demand. Please try later. Auto-research in 10 seconds.\n')
-        sleep(10)
+        sleep(8)
     else:
         for count, rank, past_time, lobby in GetLobbyUrl():
             now = strftime('%H:%M:%S')
